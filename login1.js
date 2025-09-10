@@ -1,11 +1,12 @@
 document.getElementById("loginForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
-  
+  let valido = true; // Debe estar inicializado aquí
+
+  const correo = document.getElementById("correo").value.trim();
   const password = document.getElementById("loginPassword").value;
 
   // Validación correo (@duoc.cl, @gmail.cl, @gmail.com)
-  const correo = document.getElementById("correo").value.trim();
   if (!/^[\w.%+-]+@(duoc\.cl|gmail\.cl|gmail\.com)$/.test(correo)) {
     document.getElementById("errorCorreo").innerText =
       "Ingrese un correo válido con dominio @duoc.cl, @gmail.cl o @gmail.com.";
@@ -14,13 +15,17 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     document.getElementById("errorCorreo").innerText = "";
   }
 
+  // Validación contraseña
   if (password.length < 8) {
     document.getElementById("errorLoginPassword").innerText = "La contraseña es demasiado corta.";
-    return;
+    valido = false;
   } else {
     document.getElementById("errorLoginPassword").innerText = "";
   }
 
-  // Aquí podrías validar contra base de datos o almacenamiento local
-  alert("Login exitoso ✅");
+  // Redirigir si todo es válido
+  if (valido) {
+    // Aquí va la ruta correcta de tu página de productos
+    window.location.href = "productos.html";
+  }
 });
