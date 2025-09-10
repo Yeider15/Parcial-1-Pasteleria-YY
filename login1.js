@@ -1,14 +1,17 @@
 document.getElementById("loginForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
-  const correo = document.getElementById("loginCorreo").value.trim();
+  
   const password = document.getElementById("loginPassword").value;
 
-  if (correo === "" || !/^[\w.%+-]+@duoc\.cl$/.test(correo)) {
-    document.getElementById("errorLoginCorreo").innerText = "Correo inválido (solo @duoc.cl)";
-    return;
+  // Validación correo (@duoc.cl, @gmail.cl, @gmail.com)
+  const correo = document.getElementById("correo").value.trim();
+  if (!/^[\w.%+-]+@(duoc\.cl|gmail\.cl|gmail\.com)$/.test(correo)) {
+    document.getElementById("errorCorreo").innerText =
+      "Ingrese un correo válido con dominio @duoc.cl, @gmail.cl o @gmail.com.";
+    valido = false;
   } else {
-    document.getElementById("errorLoginCorreo").innerText = "";
+    document.getElementById("errorCorreo").innerText = "";
   }
 
   if (password.length < 8) {
