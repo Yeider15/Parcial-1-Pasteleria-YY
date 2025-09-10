@@ -1,3 +1,4 @@
+
 function añadirAlCarrito(idProducto, nombre, precio) {
     // Obtener el carrito desde localStorage o crear uno vacío
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];

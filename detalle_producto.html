@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Producto - Pastelería 1000 sabores</title>
+    <title>Detalle Producto - Pastelería 1000 Sabores</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body id="pagina-detalle-producto">
 
     <!-- Navegación -->
@@ -32,9 +33,8 @@
         </div>
     </nav>
 
-<!-- Detalle del producto -->
+    <!-- Detalle del producto -->
     <div class="product-detail-container" id="contenedor-detalle-producto">
-
         <!-- Imágenes del producto -->
         <div class="product-images">
             <img src="img/T-Cuadrada-Chocolate.jpg" alt="Torta Cuadrada de Chocolate" class="main-product-image">
@@ -57,11 +57,16 @@
             <label for="cantidad">Cantidad</label>
             <input type="number" id="cantidad" value="1" min="1" class="input-cantidad">
             <br>
-            <button class="add-to-cart-btn">Añadir al carrito</button>
+            <!-- Botón de añadir al carrito con atributos data-* -->
+            <button class="add-to-cart-btn" 
+                    data-id="TC001" 
+                    data-nombre="Torta Cuadrada de Chocolate" 
+                    data-precio="45000">
+                Añadir al carrito 🛒
+            </button>
             <br>
             <div class="separator"></div>
         </div>
-
     </div>
 
     <!-- Productos relacionados -->
