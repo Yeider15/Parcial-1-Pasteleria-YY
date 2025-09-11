@@ -84,9 +84,9 @@ document.getElementById("registro").addEventListener("submit", function(e) {
   }
 });
 
-// ======================
+
 // REGIONES Y COMUNAS
-// ======================
+
 const comunasPorRegion = {
   Metropolitana: ["Santiago", "Puente Alto", "Ñuñoa"],
   Biobio: ["Concepción", "Talcahuano", "Chiguayante"],
