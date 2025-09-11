@@ -10,7 +10,7 @@
 </head>
 <body id="pagina-productos">
 
-    <!-- Navegación -->
+    <!-- Barra de navegación de boostrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index1.html">🧁 Pastelería Mil Sabores</a>
@@ -33,23 +33,10 @@
     <main>
         <h1 id="titulo-productos">PRODUCTOS</h1>
 
-        <div id="filtro-categorias">
-            <select id="filtro-categorias-select">
-                <option value="todos">Todos</option>
-                <option value="Tortas Cuadradas">Tortas Cuadradas</option>
-                <option value="Tortas Circulares">Tortas Circulares</option>
-                <option value="Postres Individuales">Postres Individuales</option>
-                <option value="Productos Sin Azucar">Productos Sin Azucar</option>
-                <option value="Pastelería Tradicional">Pastelería Tradicional</option>
-                <option value="Productos sin gluten">Productos sin gluten</option>
-                <option value="Productos Vegana">Productos Vegana</option>
-                <option value="Tortas Especiales">Tortas Especiales</option>
-            </select>
-        </div>
-
+        <!-- Contenedor de productos -->
         <div id="cuadricula-productos">
             <article class="tarjeta-producto" data-categoria="Tortas Cuadradas">
-                <a href="detalle_producto.html?product_id=TC001">
+                <a href="detalle_producto.html">
                     <img src="img/T-Cuadrada-Chocolate.jpg" alt="Torta Cuadrada de Chocolate" class="imagen-producto">
                 </a>
                 <h3>Torta Cuadrada de Chocolate</h3>
@@ -58,7 +45,7 @@
             </article>
 
             <article class="tarjeta-producto" data-categoria="Tortas Cuadradas">
-                <a href="detalle_producto.html?product_id=TC002">
+                <a href="detalle_producto2.html">
                     <img src="img/T-Cuadrada-Frutas.jpg" alt="Torta Cuadrada de Frutas">
                 </a>
                 <h3>Torta Cuadrada de Frutas</h3>
@@ -67,7 +54,7 @@
             </article>
 
             <article class="tarjeta-producto" data-categoria="Tortas Circulares">
-                <a href="detalle_producto.html?product_id=TT001">
+                <a href="detalle_producto3.html">
                     <img src="img/T-Circular-Vainilla.jpg" alt="Torta Circular de Vainilla">
                 </a>
                 <h3>Torta Circular de Vainilla</h3>
@@ -75,118 +62,94 @@
                 <button class="boton-carrito" onclick="añadirAlCarrito('TT001', 'Torta Circular de Vainilla', 40000)">Agregar al carrito 🛒</button>
             </article>
 
-            <article class="tarjeta-producto" data-categoria="Tortas Cuadradas">
-                <a href="detalle_producto.html?product_id=TT002">
-                    <img src="img/T-Cuadrada-Manjar.jpg" alt="Torta Cuadrada de Manjar">
+            <article class="tarjeta-producto" data-categoria="Tortas Circulares">
+                <a>
+                    <img src="img/T-Circular-Manjar.jpg" alt="Torta Circular de Manjar">
                 </a>
-                <h3>Torta Cuadrada de Manjar</h3>
+                <h3>Torta Circular de Manjar</h3>
                 <p>$42.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('TT002', 'Torta Cuadrada de Manjar', 42000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Postres Individuales">
-                <a href="detalle_producto.html?product_id=PI001">
-                    <img src="img/Mousse-Chocolate.jpg" alt="Mousse de Chocolate">
-                </a>
+                <img src="img/Mousse-Chocolate.jpg" alt="Mousse de Chocolate">
                 <h3>Mousse de Chocolate</h3>
                 <p>$5.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PI001', 'Mousse de Chocolate', 5000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Postres Individuales">
-                <a href="detalle_producto.html?product_id=PI002">
-                    <img src="img/Tiramisu-Clasico.jpg" alt="Tiramisú Clásico">
-                </a>
+                <img src="img/Tiramisu-Clasico.jpg" alt="Tiramisú Clásico">
                 <h3>Tiramisú Clásico</h3>
                 <p>$5.500 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PI002', 'Tiramisú Clásico', 5500)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Productos Sin Azucar">
-                <a href="detalle_producto.html?product_id=PSA001">
-                    <img src="img/T-SinAzucar-Naranja.jpg" alt="Torta Sin Azucar de Naranja">
-                </a>
+                <img src="img/T-SinAzucar-Naranja.jpg" alt="Torta Sin Azucar de Naranja">
                 <h3>Torta Sin Azucar de Naranja</h3>
                 <p>$48.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PSA001', 'Torta Sin Azucar de Naranja', 48000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Productos Sin Azucar">
-                <a href="detalle_producto.html?product_id=PSA002">
-                    <img src="img/Cheesecake-SinAzucar.jpg" alt="Cheesecake Sin Azucar">
-                </a>
+                <img src="img/Cheesecake-SinAzucar.jpg" alt="Cheesecake Sin Azucar">
                 <h3>Cheesecake Sin Azucar</h3>
                 <p>$47.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PSA002', 'Cheesecake Sin Azucar', 47000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Pastelería Tradicional">
-                <a href="detalle_producto.html?product_id=PT001">
-                    <img src="img/Empanada-Manzana.jpg" alt="Empanada de Manzana">
-                </a>
+                <img src="img/Empanada-Manzana.jpg" alt="Empanada de Manzana">
                 <h3>Empanada de Manzana</h3>
                 <p>$3.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PT001', 'Empanada de Manzana', 3000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Pastelería Tradicional">
-                <a href="detalle_producto.html?product_id=PT002">
-                    <img src="img/Tarta-Santiago.jpg" alt="Tarta de Santiago">
-                </a>
+                <img src="img/Tarta-Santiago.jpg" alt="Tarta de Santiago">
                 <h3>Tarta de Santiago</h3>
                 <p>$6.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PT002', 'Tarta de Santiago', 6000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Productos sin gluten">
-                <a href="detalle_producto.html?product_id=PG001">
-                    <img src="img/Brownie-SinGluten.jpg" alt="Brownie Sin Gluten">
-                </a>
+                <img src="img/Brownie-SinGluten.jpg" alt="Brownie Sin Gluten">
                 <h3>Brownie Sin Gluten</h3>
                 <p>$4.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PG001', 'Brownie Sin Gluten', 4000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Productos sin gluten">
-                <a href="detalle_producto.html?product_id=PG002">
                     <img src="img/Pan-SinGluten.jpg" alt="Pan Sin Gluten">
-                </a>
                 <h3>Pan Sin Gluten</h3>
                 <p>$3.500 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PG002', 'Pan Sin Gluten', 3500)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Productos Vegana">
-                <a href="detalle_producto.html?product_id=PV001">
                     <img src="img/T-Vegana-Chocolate.jpg" alt="Torta Vegana de Chocolate">
-                </a>
                 <h3>Torta Vegana de Chocolate</h3>
                 <p>$50.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PV001', 'Torta Vegana de Chocolate', 50000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Productos Vegana">
-                <a href="detalle_producto.html?product_id=PV002">
-                    <img src="img/Galletas-Vegana-Avena.jpg" alt="Galletas Veganas de Avena">
-                </a>
+                <img src="img/Galletas-Vegana-Avena.jpg" alt="Galletas Veganas de Avena">
                 <h3>Galletas Veganas de Avena</h3>
                 <p>$4.500 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('PV002', 'Galletas Veganas de Avena', 4500)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Tortas Especiales">
-                <a href="detalle_producto.html?product_id=TE001">
-                    <img src="img/T-Especial-Cumpleaños.jpg" alt="Torta Especial de Cumpleaños">
-                </a>
+                <img src="img/T-Especial-Cumpleaños.jpg" alt="Torta Especial de Cumpleaños">
                 <h3>Torta Especial de Cumpleaños</h3>
                 <p>$55.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('TE001', 'Torta Especial de Cumpleaños', 55000)">Agregar al carrito 🛒</button>
             </article>
 
             <article class="tarjeta-producto" data-categoria="Tortas Especiales">
-                <a href="detalle_producto.html?product_id=TE002">
-                    <img src="img/T-Especial-Boda.jpg" alt="Torta Especial de Boda">
-                </a>
+                <img src="img/T-Especial-Boda.jpg" alt="Torta Especial de Boda">
                 <h3>Torta Especial de Boda</h3>
                 <p>$60.000 CLP</p>
                 <button class="boton-carrito" onclick="añadirAlCarrito('TE002', 'Torta Especial de Boda', 60000)">Agregar al carrito 🛒</button>
@@ -194,6 +157,7 @@
         </div>
     </main>
 
+    <!-- Pie de pagina boostrap -->
     <footer style="background-color: #8D6E63; color: #FFF8E1; text-align: center; padding: 20px; font-family: 'Lato', sans-serif;">
         <p style="margin: 0; font-size: 16px;">© 2025 Pastelería Mil Sabores - Todos los derechos reservados 🧁🧁</p>
         <p style="margin: 5px 0;">
@@ -203,6 +167,9 @@
     </footer>
 
     <script src="productos.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
